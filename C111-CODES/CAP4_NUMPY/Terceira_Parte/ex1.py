@@ -1,6 +1,6 @@
 import numpy as np          # importação da biblioteca NumPy
 
-# carregando o arquivo ''
+# carregando o arquivo '.csv' em uma array do numpy
 arr = np.loadtxt('..\\space.csv', delimiter=';', dtype=str, encoding='utf-8')
 
 contagem_total = len(arr) - 1                                          # quantidade total de missões
