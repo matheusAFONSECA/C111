@@ -6,4 +6,6 @@ val, quant = np.unique(ex2.mtz, return_counts=True)     # val -> array com os va
 #                                                         quant -> quantidade de vezes que os números unicos apareceram
 
 relacao = np.column_stack((val, quant))     # juntando os valores unicos e quantas vezes aparecerem em uma matriz
-print(f"Números únicos(primeira coluna) e quantas vezes aparecem(segunda coluna) na matriz: \n{relacao}")
+print("\n".join([f"Valor: {valor}, Quantidade: {quantidade}" for valor, quantidade in relacao]))
+
+print(f"Números que aparecem duas vezes{relacao[relacao[:, 1] == 2][:, 0]}")
