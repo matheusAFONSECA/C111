@@ -37,3 +37,6 @@ print(f"slicing com iloc:\n{df.iloc[1:3, :]}")"""
 
 csv = pd.read_csv('paises.csv', delimiter=';')
 print(csv)
+print(csv['Country'])
+print(csv.head(5))
+print(csv.tail(2))
